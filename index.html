@@ -904,42 +904,42 @@ animation: premiumReveal 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 
           <form class="space-y-4 p-6 rounded-2xl border bg-brand-950/50 border-white/5" name="contact" method="POST" data-netlify="true">
             <input type="hidden" name="form-name" value="contact">
+
+            <div>
+              <label class="text-xs font-medium ml-1 text-slate-400 font-geist">
+                Nom Complet
+              </label>
+              <input type="text" name="name" required placeholder="John Doe" class="w-full mt-1 border rounded-lg px-4 py-3 placeholder-slate-600 focus:outline-none focus:border-accent-500 transition-colors bg-brand-900 border-white/10 text-white">
+            </div>
+            <div>
+              <label class="text-xs font-medium ml-1 text-slate-400 font-geist">
+                Email Professionnel
+              </label>
+              <input type="email" name="email" required placeholder="john@company.com" class="w-full mt-1 border rounded-lg px-4 py-3 placeholder-slate-600 focus:outline-none focus:border-accent-500 transition-colors bg-brand-900 border-white/10 text-white">
+            </div>
+            <div>
+              <label class="text-xs font-medium ml-1 text-slate-400 font-geist">
+                Budget Mensuel Meta Ads
+              </label>
+              <select name="budget" class="w-full mt-1 border rounded-lg px-4 py-3 focus:outline-none focus:border-accent-500 transition-colors appearance-none bg-brand-900 border-white/10 text-slate-300">
+                <option value="" disabled="" selected="" class="font-geist">Sélectionner...</option>
+                <option value="&lt;10k" class="font-geist">Moins de 10k€ / mois</option>
+                <option value="10-30k" class="font-geist">10k€ - 30k€ / mois</option>
+                <option value="30k+" class="font-geist">30k€ + / mois</option>
+              </select>
+            </div>
+            <div>
+              <label class="text-xs font-medium ml-1 text-slate-400 font-geist">
+                Objectif Principal
+              </label>
+              <input type="text" name="objectif" placeholder="Ex: Scaler le ROAS à 4.0" class="w-full mt-1 border rounded-lg px-4 py-3 placeholder-slate-600 focus:outline-none focus:border-accent-500 transition-colors bg-brand-900 border-white/10 text-white">
+            </div>
+
+            <button type="submit" class="w-full bg-accent-500 font-bold py-4 rounded-lg transition-all shadow-lg shadow-accent-500/20 flex items-center justify-center gap-2 mt-2 hover:bg-accent-600 text-white font-geist">
+              Obtenir mon audit
+              <iconify-icon icon="solar:arrow-right-linear" width="20"></iconify-icon>
+            </button>
           </form>
-
-          <div>
-            <label class="text-xs font-medium ml-1 text-slate-400 font-geist">
-              Nom Complet
-            </label>
-            <input type="text" placeholder="John Doe" class="w-full mt-1 border rounded-lg px-4 py-3 placeholder-slate-600 focus:outline-none focus:border-accent-500 transition-colors bg-brand-900 border-white/10 text-white">
-          </div>
-          <div>
-            <label class="text-xs font-medium ml-1 text-slate-400 font-geist">
-              Email Professionnel
-            </label>
-            <input type="email" placeholder="john@company.com" class="w-full mt-1 border rounded-lg px-4 py-3 placeholder-slate-600 focus:outline-none focus:border-accent-500 transition-colors bg-brand-900 border-white/10 text-white">
-          </div>
-          <div>
-            <label class="text-xs font-medium ml-1 text-slate-400 font-geist">
-              Budget Mensuel Meta Ads
-            </label>
-            <select class="w-full mt-1 border rounded-lg px-4 py-3 focus:outline-none focus:border-accent-500 transition-colors appearance-none bg-brand-900 border-white/10 text-slate-300">
-              <option value="" disabled="" selected="" class="font-geist">Sélectionner...</option>
-              <option value="&lt;10k" class="font-geist">Moins de 10k€ / mois</option>
-              <option value="10-30k" class="font-geist">10k€ - 30k€ / mois</option>
-              <option value="30k+" class="font-geist">30k€ + / mois</option>
-            </select>
-          </div>
-          <div>
-            <label class="text-xs font-medium ml-1 text-slate-400 font-geist">
-              Objectif Principal
-            </label>
-            <input type="text" placeholder="Ex: Scaler le ROAS à 4.0" class="w-full mt-1 border rounded-lg px-4 py-3 placeholder-slate-600 focus:outline-none focus:border-accent-500 transition-colors bg-brand-900 border-white/10 text-white">
-          </div>
-
-          <button type="button" class="w-full bg-accent-500 font-bold py-4 rounded-lg transition-all shadow-lg shadow-accent-500/20 flex items-center justify-center gap-2 mt-2 hover:bg-accent-600 text-white font-geist">
-            Obtenir mon audit
-            <iconify-icon icon="solar:arrow-right-linear" width="20"></iconify-icon>
-          </button>
         </div>
       </div>
     </section>
