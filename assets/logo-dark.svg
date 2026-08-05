@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 84" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Adsvantage_Scale">
+  <style>
+    .as-word{font-family:'Space Grotesk','Inter',sans-serif;font-weight:700;font-size:64px;fill:#020616;letter-spacing:-0.01em;}
+    .as-slash{font-family:'Space Grotesk','Inter',sans-serif;font-weight:700;font-size:64px;fill:#ff8c00;letter-spacing:-0.01em;}
+  </style>
+  <text x="0" y="62" class="as-slash">/</text>
+  <text x="28" y="62" class="as-word">Adsvantage_Scale</text>
+</svg>
