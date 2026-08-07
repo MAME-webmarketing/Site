@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- ─── META / SEO ─────────────────────────────────────────────────────── -->
-  <title>Hamed YAHYA BEY · Performance Creative Strategist · Meta Ads</title>
+  <title>Adsvantage Scale · Performance Creative Strategist · Meta Ads</title>
   <meta name="description" content="Votre créa Meta décide de votre ROI, pas votre budget. Je transforme votre budget publicitaire en revenu grâce à une stratégie créative construite à partir de vos vrais clients. Direct response sur Meta." />
 
   <!-- Open Graph -->
@@ -16,7 +16,8 @@
   <meta property="og:image" content="assets/og-image.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/favicon.png" />
 
   <!-- ─── FONTS ──────────────────────────────────────────────────────────── -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -1169,14 +1170,20 @@
     }
 
     @media (max-width: 640px) {
+      /* Espacements resserrés sur mobile */
+      :root { --section-gap: 66px; }
       .container { padding: 0 20px; }
       .nav-inner { padding: 0 20px; }
-      #hero { min-height: auto; padding-top: calc(var(--nav-h) + 60px); }
-      #hero h1 { letter-spacing: -2px; }
+      #hero { min-height: auto; padding-top: calc(var(--nav-h) + 48px); padding-bottom: 56px; }
+      #hero h1 { font-size: clamp(46px, 12vw, 60px); letter-spacing: -1.5px; line-height: 1.04; margin-bottom: 34px; }
       /* badge nom + titre : évite le débordement sur petit écran */
       .hero-badge { font-size: 11px; letter-spacing: 0.02em; line-height: 1.5; border-radius: 14px; }
       .hero-cta { flex-direction: column; align-items: stretch; }
       .btn-primary, .btn-ghost { justify-content: center; }
+      #manifesto { padding: 66px 0 72px; }
+      #trust-bar { padding: 38px 0; }
+      #j7 { padding: 66px 0; }
+      .method-flow { margin-top: 48px; }
       .steps { grid-template-columns: 1fr; }
       .case-metrics { grid-template-columns: 1fr 1fr; }
       .tmn-grid { grid-template-columns: 1fr; }
@@ -1187,6 +1194,20 @@
       .j7-box { padding: 40px 26px; }
       .footer-inner { flex-direction: column; gap: 24px; text-align: center; }
       .footer-links { justify-content: center; flex-wrap: wrap; gap: 20px; }
+
+      /* Tailles de texte remontées sur mobile (lisibilité) */
+      .section-sub { font-size: 16.5px; }
+      .method-intro { font-size: 19px; }
+      .method-step-intro { font-size: 16px; }
+      .method-list li { font-size: 15.5px; }
+      .case-desc { font-size: 15px; }
+      .case-metric-label { font-size: 13px; }
+      .step p { font-size: 15px; }
+      .service-card p { font-size: 15.5px; }
+      .tmn-quote { font-size: 15.5px; }
+      .form-intro-text { font-size: 15.5px; }
+      .j7-text { font-size: 15.5px; }
+      .about-text { font-size: 15.5px; }
     }
 
     /* ─── FOCUS STATES (clavier) ─────────────────────────────────────────── */
@@ -1245,13 +1266,9 @@
 
         <h1>Ne dépensez plus au <span class="accent-serif">hasard</span> sur Meta.</h1>
 
-        <p class="hero-sub">
-          La performance sur Meta est une question de message, pas de volume. J'analyse vos clients, je travaille le message qui les fait acheter, et je le transforme en créas qui scalent vos ventes.
-        </p>
-
         <div class="hero-cta">
-          <a href="#contact" class="btn-primary">Demander un audit gratuit →</a>
-          <a href="#cases" class="btn-ghost">Voir les résultats</a>
+          <a href="#contact" class="btn-primary">Réserver un audit créa gratuit →</a>
+          <a href="#cases" class="btn-ghost">Voir mes résultats client</a>
         </div>
       </div>
     </div>
@@ -1263,7 +1280,7 @@
       <div class="manifesto-lines">
         <p class="manifesto-text" data-words>La plupart des marques qui investissent en Meta Ads misent sur le volume créatif. Beaucoup de publicités, sans réelle stratégie derrière.</p>
         <p class="manifesto-text" data-words>Depuis la mise à jour Andromeda, faire du volume ne suffit plus à compenser un manque de <span class="accent-serif">stratégie</span>.</p>
-        <p class="manifesto-text" data-words>Ce qui vous sépare du palier suivant, c'est comprendre votre audience en profondeur et aligner le bon message publicitaire sur les bonnes personnes. C'est ça qui permet de scaler.</p>
+        <p class="manifesto-text" data-words>Ce qui vous sépare du palier suivant, c'est comprendre votre audience en profondeur et aligner le bon message publicitaire vers les bonnes personnes.</p>
       </div>
     </div>
   </section>
@@ -1321,10 +1338,10 @@
             <div class="method-body">
               <p class="method-step-intro">La créa part en test, les résultats décident. Je scale ce qui génère du revenu.</p>
               <ul class="method-list">
-                <li>Un angle par publicité, pour des tests lisibles et des décisions rapides</li>
+                <li>Un angle, une offre et un persona par publicité, pour des tests lisibles et des décisions rapides</li>
                 <li>J'analyse les performances et j'identifie les créas gagnantes</li>
-                <li>J'itère sur les gagnants : chaque créa qui performe nourrit la suivante</li>
-                <li>Je scale ce qui performe et je coupe ce qui ne rentre pas</li>
+                <li>On émet de nouvelles hypothèses créatives sur la base de ce qui fonctionne : chaque top performing ad nous permet d'avancer vers la prochaine</li>
+                <li>Je scale les meilleures créas pour atteindre vos objectifs business</li>
               </ul>
             </div>
           </div>
@@ -1337,32 +1354,7 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════ MARQUEE LOGOS ══════════════════ -->
-  <!--
-    Bandeau logos clients. Remplacer les placeholders par les vrais logos/noms quand fournis.
-    La liste est dupliquée (2 pistes identiques) pour un défilement continu.
-  -->
-  <div id="trust-bar" aria-label="Marques accompagnées">
-    <p class="marquee-label">Les marques que j'accompagne</p>
-    <div class="marquee">
-      <div class="marquee-track">
-        <span class="marquee-item">Gang du Succès</span>
-        <span class="marquee-item">LP Academy</span>
-        <span class="marquee-item">Françoise Saget</span>
-        <span class="marquee-item ph">[LOGO CLIENT]</span>
-        <span class="marquee-item ph">[LOGO CLIENT]</span>
-        <span class="marquee-item ph">[LOGO CLIENT]</span>
-      </div>
-      <div class="marquee-track" aria-hidden="true">
-        <span class="marquee-item">Gang du Succès</span>
-        <span class="marquee-item">LP Academy</span>
-        <span class="marquee-item">Françoise Saget</span>
-        <span class="marquee-item ph">[LOGO CLIENT]</span>
-        <span class="marquee-item ph">[LOGO CLIENT]</span>
-        <span class="marquee-item ph">[LOGO CLIENT]</span>
-      </div>
-    </div>
-  </div>
+  <!-- ═══ BANDEAU LOGOS (marquee) — retiré temporairement à la demande de Hamed, à réactiver quand les vrais logos clients seront fournis ═══ -->
 
   <!-- ═══════════════════════════════════════ ÉTUDES DE CAS ══════════════════ -->
   <section id="cases">
@@ -1391,7 +1383,7 @@
           </div>
           <div class="case-metrics">
             <div>
-              <div class="case-metric-val"><span data-counter="34355" data-decimals="0" data-suffix=" €">0</span></div>
+              <div class="case-metric-val">+34K€</div>
               <div class="case-metric-label">de ventes générées</div>
             </div>
             <div>
@@ -1422,7 +1414,7 @@
               <div class="case-metric-label">de croissance du chiffre d'affaires</div>
             </div>
             <div>
-              <div class="case-metric-val"><span data-counter="123896" data-suffix=" €">0</span></div>
+              <div class="case-metric-val">+124K€</div>
               <div class="case-metric-label">de CA après lancement</div>
             </div>
             <div>
@@ -1431,7 +1423,7 @@
             </div>
           </div>
           <p class="case-desc">
-            Accompagnement d'un centre de formation : le chiffre d'affaires double sur l'exercice, de 60 000 € à plus de 123 000 €.
+            Accompagnement d'un centre de formation : le chiffre d'affaires double sur l'exercice, passant de 60 000 € à +124 000 €.
           </p>
         </div>
 
@@ -1443,17 +1435,17 @@
             <span class="case-tag">E-commerce</span>
           </div>
           <div class="case-metrics">
-            <div>
-              <div class="case-metric-val"><span data-counter="5000" data-suffix="€+">0</span></div>
-              <div class="case-metric-label">de dépense par jour, au pic</div>
+            <div style="grid-column:1 / -1;">
+              <div class="case-metric-val" style="font-size:44px;">+5K€</div>
+              <div class="case-metric-label">de dépense publicitaire par jour, au pic</div>
             </div>
             <div>
               <div class="case-metric-val"><span data-counter="90000" data-prefix="~" data-suffix="€">0</span></div>
               <div class="case-metric-label">investis sur la période</div>
             </div>
-            <div style="grid-column:1 / -1;">
+            <div>
               <div class="case-metric-val" style="font-size:22px;">Objectif ROI dépassé</div>
-              <div class="case-metric-label">résultat business atteint et dépassé</div>
+              <div class="case-metric-label">résultat business</div>
             </div>
           </div>
           <p class="case-desc">
@@ -1470,7 +1462,7 @@
     <div class="container">
       <div class="j7-box reveal">
         <p class="section-label"><span class="slash">/</span>Avant Adsvantage Scale</p>
-        <h2 class="j7-headline">J'ai géré plus de <span class="num">8M€</span> de budget publicitaire sur Meta, en direct.</h2>
+        <h2 class="j7-headline">J'ai piloté plus de <span class="num">8M€</span> d'investissement publicitaire sur Meta, pour de grandes marques e-commerce et lead gen.</h2>
         <!-- [PERSO — à retravailler par Hamed] : ta conviction sur le media buying classique sonnera plus vrai dans tes mots. -->
         <p class="j7-text">
           Au sein de l'une des plus grandes agences marketing francophones. Quatre ans à piloter des comptes à fort volume sur des marques établies. C'est là que j'ai vu, à grande échelle, que passé un certain seuil de dépense, c'est la créa et votre capacité à travailler votre message publicitaire qui permettent de scaler.
@@ -1485,78 +1477,7 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════ TÉMOIGNAGES ════════════════════ -->
-  <!--
-    Wall of proof. Remplacer chaque placeholder par un vrai témoignage (verbatim + nom + titre/marque).
-    Ne JAMAIS créer de faux témoignage crédible : laisser les placeholders visibles tant que Hamed n'a pas fourni les vrais.
-    Carte vidéo LP Academy : déposer assets/temoignage-lp-academy.mp4 puis remplacer le bloc .tmn-thumb
-    par <video controls poster="assets/temoignage-lp-poster.jpg"><source src="assets/temoignage-lp-academy.mp4" type="video/mp4"></video>.
-  -->
-  <section id="temoignages">
-    <div class="container">
-      <div class="section-head">
-        <p class="section-label"><span class="slash">/</span>Témoignages</p>
-        <h2 class="section-title">Ce que disent mes clients.</h2>
-      </div>
-
-      <div class="tmn-grid">
-
-        <!-- Carte vidéo LP Academy -->
-        <div class="tmn-card tmn-video reveal">
-          <div class="tmn-thumb">
-            <div class="tmn-play" aria-hidden="true">
-              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-            </div>
-            <span class="tmn-thumb-label">[VIDÉO TÉMOIGNAGE LP ACADEMY — À VENIR]</span>
-          </div>
-          <div class="tmn-author">
-            <div class="tmn-avatar"></div>
-            <div>
-              <div class="tmn-name"><span class="ph">[Nom]</span></div>
-              <div class="tmn-role"><span class="ph">[Titre, LP Academy]</span></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Témoignage texte 1 -->
-        <div class="tmn-card reveal reveal-d1">
-          <p class="tmn-quote"><span class="ph">[TÉMOIGNAGE CLIENT — À REMPLACER]</span></p>
-          <div class="tmn-author">
-            <div class="tmn-avatar"></div>
-            <div>
-              <div class="tmn-name"><span class="ph">[Nom]</span></div>
-              <div class="tmn-role"><span class="ph">[Titre, Marque]</span></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Témoignage texte 2 -->
-        <div class="tmn-card reveal reveal-d2">
-          <p class="tmn-quote"><span class="ph">[TÉMOIGNAGE CLIENT — À REMPLACER]</span></p>
-          <div class="tmn-author">
-            <div class="tmn-avatar"></div>
-            <div>
-              <div class="tmn-name"><span class="ph">[Nom]</span></div>
-              <div class="tmn-role"><span class="ph">[Titre, Marque]</span></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Témoignage texte 3 -->
-        <div class="tmn-card reveal">
-          <p class="tmn-quote"><span class="ph">[TÉMOIGNAGE CLIENT — À REMPLACER]</span></p>
-          <div class="tmn-author">
-            <div class="tmn-avatar"></div>
-            <div>
-              <div class="tmn-name"><span class="ph">[Nom]</span></div>
-              <div class="tmn-role"><span class="ph">[Titre, Marque]</span></div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
+  <!-- ═══ TÉMOIGNAGES (wall of proof) — retiré temporairement à la demande de Hamed, à réactiver quand les vrais témoignages + la vidéo LP Academy seront fournis ═══ -->
 
   <!-- ═══════════════════════════════════════ À PROPOS ═══════════════════════ -->
   <section id="about">
@@ -1574,9 +1495,9 @@
           <h2 class="about-name">Hamed YAHYA BEY</h2>
           <p class="about-role">Performance Creative Strategist</p>
           <div class="about-text">
-            <p>Je suis Performance Creative Strategist, spécialisé en direct response sur les social ads, et plus spécifiquement sur Meta. Mon métier : driver du revenu, accélérer votre acquisition et faire grossir votre business.</p>
+            <p>Je suis Performance Creative Strategist, spécialisé en direct response en social ads, et plus spécifiquement sur Meta. Mon métier : driver du revenu, accélérer votre acquisition et faire grossir votre business.</p>
             <p>Cela fait six ans que je suis expert en direct response marketing, dont quatre ans en agence chez J7 Media. J'y ai géré plus de 8M€ de budget publicitaire sur Meta, et généré plusieurs dizaines de millions d'euros de revenus pour mes clients, principalement des marques e-commerce et des entreprises de leadgen.</p>
-            <p>J'accompagne mes clients à croître sur Meta et à devenir meilleurs sur leur stratégie d'acquisition. Pas de compte délégué à un junior, pas trois interlocuteurs différents : vous travaillez directement avec moi. Une seule vision sur le compte, un seul objectif, la croissance de votre organisation.</p>
+            <p>J'accompagne mes clients à scale sur Meta et à optimiser leur stratégie d'acquisition. Pas de compte délégué à un junior, pas trois interlocuteurs différents : vous travaillez directement avec moi. Une seule vision sur le compte, un seul objectif, la croissance de votre organisation. Une seule ambition, transformer vos ads en top performing ads et scaler vos revenus publicitaires.</p>
           </div>
         </div>
       </div>
@@ -1609,13 +1530,13 @@
   <section id="process">
     <div class="container">
       <p class="section-label"><span class="slash">/</span>Comment on travaille ensemble</p>
-      <h2 class="section-title">De l'appel au scale, sans zone grise.</h2>
+      <h2 class="section-title">De l'appel au scale, tout simplement.</h2>
 
       <div class="steps">
         <div class="step reveal">
           <span class="step-num">01</span>
           <h3>L'appel</h3>
-          <p>45 minutes pour comprendre votre marque, vos enjeux et vos chiffres.</p>
+          <p>30 minutes pour comprendre votre business, vos enjeux et votre marché.</p>
           <a href="#contact">Réserver l'appel →</a>
         </div>
         <div class="step reveal reveal-d1">
@@ -1633,7 +1554,7 @@
         <div class="step reveal reveal-d3">
           <span class="step-num">04</span>
           <h3>Le pilotage</h3>
-          <p>Campagnes, testing créa continu, reporting complet. On teste, on émet des hypothèses, mais surtout on avance et on capitalise sur ce qui marche.</p>
+          <p>Campagnes, testing créa continu, reporting complet. On teste, on émet des hypothèses, mais surtout on avance.</p>
           <a href="#contact">En parler →</a>
         </div>
       </div>
@@ -1654,7 +1575,7 @@
 
         <div class="form-intro">
           <p class="section-label"><span class="slash">/</span>Contact</p>
-          <h2 class="section-title">Bâtissons ensemble votre stratégie créative de <span class="accent-serif">scaling</span>.</h2>
+          <h2 class="section-title">Bâtissons ensemble la stratégie créative de votre <span class="accent-serif">marque</span>.</h2>
           <p class="form-intro-text">
             Ça commence par un audit gratuit de votre compte. Je regarde votre créa, vos angles et vos performances, et je vous montre où se trouve votre prochain palier. Sans engagement, vous repartez avec un plan clair.
           </p>
