@@ -864,16 +864,18 @@
     /* ─── ABOUT (personal brand) ─────────────────────────────────────────── */
     .about-inner {
       display: grid;
-      grid-template-columns: 380px 1fr;
+      grid-template-columns: 300px 1fr;
       gap: 72px;
       align-items: center;
     }
     .about-photo {
       position: relative;
-      border-radius: var(--radius);
+      border-radius: 50%;
       overflow: hidden;
       border: 1px solid var(--border-md);
-      aspect-ratio: 4 / 5;
+      aspect-ratio: 1 / 1;
+      width: 300px;
+      max-width: 100%;
       background: var(--card-bg);
     }
     .about-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
@@ -1247,7 +1249,7 @@
       <a href="#hero" class="nav-logo" aria-label="Adsvantage Scale, accueil"><img src="assets/logo-v3.png" alt="Adsvantage Scale" class="nav-logo-img" width="144" height="26" /></a>
       <ul class="nav-links">
         <li><a href="#methode">Méthode</a></li>
-        <li><a href="#cases">Études de cas</a></li>
+        <li><a href="#cases">Résultats</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -1360,7 +1362,7 @@
   <section id="cases">
     <div class="container">
       <div class="section-head">
-        <p class="section-label"><span class="slash">/</span>Études de cas</p>
+        <p class="section-label"><span class="slash">/</span>Résultats clients</p>
         <h2 class="section-title">Le résultat business. Pas le ROAS.</h2>
         <p class="section-sub">
           Je ne pilote pas pour un ROAS plateforme déconnecté du réel. Je pilote pour votre objectif business : générer du profit et de la croissance concrète pour votre entreprise.
@@ -1369,17 +1371,40 @@
 
       <div class="cases-grid" id="cases-grid">
 
-        <!-- CAS 1 — Gang du Succès (vedette) -->
+        <!-- CAS 1 — Françoise Saget (vedette) -->
         <div class="case-card featured reveal">
           <div class="case-featured-main">
             <div class="case-header">
-              <!-- Remplacer par <img src="assets/logos/gang-du-succes.svg" alt="Gang du Succès"> quand dispo -->
-              <span class="case-logo-placeholder">Gang du Succès</span>
-              <span class="case-tag">Formation</span>
+              <!-- Remplacer par <img src="assets/logos/francoise-saget.svg" alt="Françoise Saget"> quand dispo -->
+              <span class="case-logo-placeholder">Françoise Saget</span>
+              <span class="case-tag">E-commerce</span>
             </div>
             <p class="case-desc">
-              Accompagnement du lancement d'un challenge pour un centre de formation : 695 inscriptions et 34 355 € de ventes générées, pour un peu plus de 3 000 € de coût total. Soit environ 31 000 € de retour net.
+              Grande marque française de décoration d'intérieur et de prêt-à-porter. J'ai scalé le compte publicitaire jusqu'à plus de 5 000 € de dépense par jour, environ 90 000 € investis sur la période, avec un objectif business atteint et dépassé. Un Black Friday avant l'heure, en plein été.
             </p>
+          </div>
+          <div class="case-metrics">
+            <div style="grid-column:1 / -1;">
+              <div class="case-metric-val" style="font-size:44px;">+5K€/jour</div>
+              <div class="case-metric-label">de scale du compte publicitaire, au pic</div>
+            </div>
+            <div>
+              <div class="case-metric-val"><span data-counter="90000" data-prefix="~" data-suffix="€">0</span></div>
+              <div class="case-metric-label">investis sur la période</div>
+            </div>
+            <div>
+              <div class="case-metric-val" style="font-size:22px;">Objectif ROI dépassé</div>
+              <div class="case-metric-label">résultat business</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CAS 2 — Gang du Succès -->
+        <div class="case-card reveal reveal-d1">
+          <div class="case-header">
+            <!-- Remplacer par <img src="assets/logos/gang-du-succes.svg" alt="Gang du Succès"> quand dispo -->
+            <span class="case-logo-placeholder">Gang du Succès</span>
+            <span class="case-tag">Formation</span>
           </div>
           <div class="case-metrics">
             <div>
@@ -1399,10 +1424,13 @@
               <div class="case-metric-label">coût par lead</div>
             </div>
           </div>
+          <p class="case-desc">
+            Accompagnement du lancement d'un challenge pour un centre de formation : 695 inscriptions et 34 355 € de ventes générées, pour un peu plus de 3 000 € de coût total. Soit environ 31 000 € de retour net.
+          </p>
         </div>
 
-        <!-- CAS 2 — LP Academy -->
-        <div class="case-card reveal reveal-d1">
+        <!-- CAS 3 — LP Academy -->
+        <div class="case-card reveal reveal-d2">
           <div class="case-header">
             <!-- Remplacer par <img src="assets/logos/lp-academy.svg" alt="LP Academy"> quand dispo -->
             <span class="case-logo-placeholder">LP Academy</span>
@@ -1424,32 +1452,6 @@
           </div>
           <p class="case-desc">
             Accompagnement d'un centre de formation : le chiffre d'affaires double sur l'exercice, passant de 60 000 € à +124 000 €.
-          </p>
-        </div>
-
-        <!-- CAS 3 — Françoise Saget -->
-        <div class="case-card reveal reveal-d2">
-          <div class="case-header">
-            <!-- Remplacer par <img src="assets/logos/francoise-saget.svg" alt="Françoise Saget"> quand dispo -->
-            <span class="case-logo-placeholder">Françoise Saget</span>
-            <span class="case-tag">E-commerce</span>
-          </div>
-          <div class="case-metrics">
-            <div style="grid-column:1 / -1;">
-              <div class="case-metric-val" style="font-size:44px;">+5K€</div>
-              <div class="case-metric-label">de dépense publicitaire par jour, au pic</div>
-            </div>
-            <div>
-              <div class="case-metric-val"><span data-counter="90000" data-prefix="~" data-suffix="€">0</span></div>
-              <div class="case-metric-label">investis sur la période</div>
-            </div>
-            <div>
-              <div class="case-metric-val" style="font-size:22px;">Objectif ROI dépassé</div>
-              <div class="case-metric-label">résultat business</div>
-            </div>
-          </div>
-          <p class="case-desc">
-            Ma référence e-commerce. Scaling d'une marque de décoration d'intérieur jusqu'à plus de 5 000 € de dépense par jour, environ 90 000 € investis sur la période, avec un objectif business atteint et dépassé. Un Black Friday avant l'heure, en plein été.
           </p>
         </div>
 
@@ -1686,7 +1688,7 @@
         <span class="footer-logo"><img src="assets/logo-v3.png" alt="Adsvantage Scale" class="footer-logo-img" width="122" height="22" /></span>
         <ul class="footer-links">
           <li><a href="#methode">Méthode</a></li>
-          <li><a href="#cases">Études de cas</a></li>
+          <li><a href="#cases">Résultats</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
